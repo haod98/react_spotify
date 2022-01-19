@@ -1,0 +1,10 @@
+.primaryLink {
+    border: 1px;
+    background: #fa8072;
+    color: #0f52ba;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 500px;
+}

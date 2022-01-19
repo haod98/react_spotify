@@ -1,0 +1,18 @@
+body {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 16;
+    background-color: #0f52ba;
+}
+
+h1 {
+    font-family: "Anton", sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+}
