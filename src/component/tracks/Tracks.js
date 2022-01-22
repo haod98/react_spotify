@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import './tracks.css';
 
 
 function Tracks(props) {
@@ -25,7 +24,6 @@ function Tracks(props) {
                 const songUrl = track.external_urls.spotify;
                 const songUri = track.uri;
                 let artistNames = '';
-
                 return (
                     <div key={i} className="albumContainer">
                         <a href={songUrl}>
@@ -42,9 +40,10 @@ function Tracks(props) {
                                 };
                             })
                         }
-                        <p className="trackTitle">{track.name}</p>
-                        <p className="trackArtist">{artistNames}</p>
-
+                        <div className="trackInfoContainer">
+                            <p className="text-3xl font-heading">{track.name}</p>
+                            <p className="trackArtist">{artistNames}</p>
+                        </div>
                         <iframe className="songIframe" title={track.name} src={"https://open.spotify.com/embed/track/" + getSongUri(songUri)} width="300" height="80" allowtransparency="true"></iframe>
                     </div>
                 )

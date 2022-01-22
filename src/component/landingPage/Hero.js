@@ -1,6 +1,5 @@
 import React from "react";
 import PrimaryLink from "../PrimaryLink";
-import './landingPage.css';
 import { authentication } from "../../helpers/authentication"
 
 function Hero() {

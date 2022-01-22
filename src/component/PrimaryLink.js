@@ -1,5 +1,4 @@
 import React from "react";
-import './primaryLink.css';
 
 function PrimaryLink(props) {
     console.log(props);
