@@ -1,0 +1,16 @@
+.albumContainer {
+    margin-bottom: 15px;
+}
+
+.trackTitle {
+    font-family: "Anton", sans-serif;
+    font-size: 1.5rem;
+}
+
+.trackArtist {
+    color: var(--primary-color);
+}
+
+.songIframe {
+    border: 0;
+}

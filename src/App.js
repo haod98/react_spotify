@@ -1,8 +1,16 @@
 import Hero from "./component/landingPage/Hero";
-import { userHasAccessToken } from "./helpers/authentication";
+import { userHasAccessToken, getAccessToken } from "./helpers/authentication";
+import Tracks from "./component/tracks/Tracks";
+import SpotifyWebApi from "spotify-web-api-js";
 function App() {
   if (userHasAccessToken()) {
-    return <h1>Hello World</h1>
+    const spotify = new SpotifyWebApi();
+    spotify.setAccessToken(getAccessToken());
+    return (
+      <div>
+        <Tracks tracks={spotify.getMyTopTracks} />
+      </div>
+    )
   }
   return (
     <Hero />
