@@ -1,5 +1,5 @@
 .heroHeader {
     text-transform: uppercase;
     font-size: 4rem;
-    color: #fa8072;
+    color: var(--primary-color);
 }

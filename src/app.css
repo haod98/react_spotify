@@ -1,7 +1,14 @@
+:root {
+    --primary-color: #fa8072;
+    --secondary-color: #0f52ba;
+    --text-ff: "Titillium Web", sans-serif;
+    --heading-ff: "Anton", sans-serif;
+}
+
 body {
-    font-family: "Titillium Web", sans-serif;
+    font-family: var(--text-ff);
     font-size: 16;
-    background-color: #0f52ba;
+    background-color: var(--secondary-color);
 }
 
 h1 {
@@ -15,4 +22,5 @@ a {
 
 p {
     color: white;
+    margin: 0;
 }
